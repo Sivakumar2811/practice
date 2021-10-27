@@ -3,26 +3,25 @@ package Practice;
 import java.util.Scanner;
 
 public class Fibonacci_series {
+    static int fib(int n){
+        if (n<=1){
+            return n;
+        }
+        return fib(n-1) + fib(n-2);
+    }
     public static void main(String[] args) {
-        int a=0,b=0,c=1,n;
+        int n;
 
         System.out.print("Enter the upto number :");
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
 
-        while(true)
+        for(int i=0;i<=n;i++)
         {
-            a=b;
-            b=c;
-            c=a+b;
-            if (n>=a)
-            {
-                System.out.print(a+" ");
-            }
-            else
-            {
+            if (fib(i)>n){
                 break;
             }
+            System.out.print(fib(i)+" ");
         }
     }
 }
