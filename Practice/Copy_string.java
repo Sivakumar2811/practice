@@ -10,7 +10,11 @@ public class Copy_string {
         Scanner sc = new Scanner(System.in);
         s=sc.nextLine();
 
-        StringBuffer s1 = new StringBuffer(s);
+        char ch[]=s.toCharArray();
+        for (char c:ch)
+        {
+            s1+=c;
+        }
 
         System.out.println("String of s1 is :"+s1);
     }
