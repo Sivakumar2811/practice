@@ -162,5 +162,3 @@ public class database_example {
         }
     }
 }
-//from table
-//query = "Create table Employee laptops (Id integer, Name varchar(50), Lap Brand varchar(50), Operating System varchar(50), Storage size integer, Price integer)";
